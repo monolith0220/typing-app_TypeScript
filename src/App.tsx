@@ -3,7 +3,7 @@ import { EasyWords, HardWords } from "./WordList";
 
 type Difficulty = "easy" | "hard";
 
-function App(): JSX.Element {
+const App: React.FC = () => {
 	const [currentWord, setCurrentWord] = useState<string>("");
 	const [typedWord, setTypedWord] = useState<string>("");
 	const [score, setScore] = useState<number>(0);
@@ -83,6 +83,6 @@ function App(): JSX.Element {
 			)}
 		</div>
 	);
-}
+};
 
 export default App;
