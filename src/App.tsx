@@ -46,7 +46,8 @@ const App: React.FC = () => {
 	};
 
 	const handleDifficultyChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-		setDifficulty(e.target.value);
+		const value = e.target.value as Difficulty;
+		setDifficulty(value);
 	};
 
 	const getRandomWord = (): string => {
